@@ -1,0 +1,382 @@
+html {
+  margin:0;
+  padding:0;
+  font-size: 62.5%;
+  background-image: url(./components/images/image3.gif), url(./components/images/coffeebean1.png);
+  opacity: 1, 0.8;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  display:block;
+  background-repeat: repeat, no-repeat;
+  background-attachment: local, fixed;
+  background-size: cover, cover;
+  background-position: center center, center center;
+}
+
+.App {
+  text-align: center;
+
+}
+
+.logo {
+  width: 15rem;
+  height: 11rem;
+  padding: 0.3rem;
+  animation: App-logo-spin infinite 1.0s linear;
+}
+
+@keyframes App-logo-spin {
+  0% { transform: rotate(-40deg); }
+  50% { transform: rotate(-10deg); }
+  100% { transform: rotate(-40deg); }
+}
+
+.container {
+  padding: 1.5rem;
+}
+
+//page border{}
+.top, .bottom, .left, .right {
+	background: #0077cc;
+	position: fixed;
+	}
+.left, .right {
+		top: 0; bottom: 0;
+		width: 1.5rem;
+		}
+.left { left: 0; }
+.right { right: 0; }
+
+.top, .bottom {
+		left: 0; right: 0;
+		height: 1.5rem;
+		}
+.top { top: 0; }
+.bottom { bottom: 0; }
+
+//nav
+.navbar {
+
+}
+
+@keyframes moveHorizontal {
+  from {left: 10%;}
+  to {left: 55%;}
+}
+
+//title{}
+.navbar-brand {
+  color: orange;
+  font-family: "Comic Sans MS", Times;
+  font-size: 7rem;
+  width: 10%;
+  vertical-align: middle;
+  text-decoration: none;
+  position: relative;
+  animation: moveHorizontal 7s infinite;
+  animation-direction: alternate-reverse;
+}
+
+.navbar-brand:hover {
+  color: #ffff00;
+}
+
+ul {
+  list-style-type: none;
+  vertical-align: bottom;
+}
+
+li {
+  float: left;
+  vertical-align: bottom;
+}
+
+.nav-link {
+
+  color: #ffffff;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #99ccff;
+}
+
+
+.loginDiv {
+  float: right;
+}
+
+.Label1 {
+  color: #ffffff;
+  font-size: 2rem;
+  vertical-align: top;
+}
+
+th {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+td {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.payLabel, .loginedLabel, .loginLabel, .loginControl, .loginButton, .joinLabel, .joinControl, .joinButton {
+  font-size: 2rem;
+  color: #ffee55;
+}
+
+.loginedLabel {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.loginControl, .joinControl {
+  background-color: #005599;
+}
+
+::placeholder {
+  color: #777777;
+}
+
+:-ms-input-placeholder {
+  color: #777777;
+}
+
+::-ms-input-placeholder {
+  color: #777777;
+}
+
+.loginButton {
+  background-color: #009911;
+  border-radius: 1rem;
+}
+
+.joinButton {
+  border-radius: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #ffcc55;
+  text-align: center;
+
+}
+
+.joinLabel, .joinControl {
+
+}
+
+.joinButton2 {
+  background-color: #009911;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+
+}
+
+
+.joinDiv {
+  padding-left: 28rem;
+}
+
+.joinP {
+  font-size: 3rem;
+}
+
+.validLabel {
+  color: #ff2222;
+  font-size: 1.5rem;
+}
+
+.photoDiv {
+
+}
+
+.photoItem {
+}
+
+.photoList {
+  margin: auto;
+  width: 80%;
+}
+
+.description {
+  color: #ffff00;
+  font-size: 2rem;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.photo {
+  height: 28rem;
+  width: 40rem;
+}
+
+.photo2 {
+  height: 38rem;
+  width: 40rem;
+}
+
+.selector {
+  color: #ff0000;
+  font-size: 3rem;
+}
+
+.productButton {
+  border-radius: 1rem;
+  background-color: #ff8866;
+  font-size: 1.8rem;
+  font-family: verdana;
+  color: #330033;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+}
+
+.tableContent {
+  justify-content: center;
+}
+
+.success {
+  text-align: center;
+
+  h2 {
+    color: seagreen;
+  }
+
+  a {
+    display: block;
+  }
+}
+
+.checkout-form {
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15);
+
+  p {
+    text-align: center;
+
+  }
+
+  label {
+    min-width: 500px;
+    color: #6b7c93;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+
+  }
+
+  input,
+  .StripeElement {
+    display: block;
+    margin: 10px 0 20px 0;
+    padding: 10px 14px;
+    font-size: 1em;
+    font-family: 'Source Code Pro', monospace;
+    box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px,
+      rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    background: white;
+
+
+    &::placeholder {
+      color: #aab7c4;
+    }
+
+    &:focus,
+    .StripeElement--focus {
+      box-shadow: rgba(50, 50, 93, 0.109804) 0px 4px 6px,
+        rgba(0, 0, 0, 0.0784314) 0px 1px 3px;
+      -webkit-transition: all 150ms ease;
+      transition: all 150ms ease;
+    }
+  }
+
+  .order-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-decoration: none;
+    margin-top: 5%;
+    background-color: #008cdd;
+    border: 1px solid #008cdd;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    width: 200px;
+    transition: opacity 200ms;
+    cursor: pointer;
+
+    &.success {
+      background-color: seagreen;
+      border-color: seagreen;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+
+.payControl {
+  background-color: #ee9933;
+  width: 16rem;
+}
+
+.checkout {
+  padding-left: 20rem;
+}
+
+.payLabel {
+
+}
+
+.column {
+  float: left;
+  width: 35%;
+}
+
+.columnSmall {
+  float: left;
+  width: 20%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.orderDiv {
+  padding-left: 30%;
+}
